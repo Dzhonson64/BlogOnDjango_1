@@ -11,9 +11,9 @@ def generate_filename(instance, filname):
     filename = instance.slug + '.jpg'
     return "{}/{}".format(instance, filename)
 
-class ArticleManager(models.Model):
+class ArticleManager(models.Manager):
     def all(self, *args, **kwargs):
-        return super(ArticleManager).get_queryset().filter(pk__in=[3,5,7])
+        return super(ArticleManager, self).get_queryset().filter(pk__in=[1, 2])
 
 class Article(models.Model):
     category = models.ForeignKey('Category', on_delete = models.CASCADE)
