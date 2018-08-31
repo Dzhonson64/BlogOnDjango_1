@@ -31,11 +31,11 @@ class Article(models.Model):
     content = models.TextField()
     likes = models.PositiveIntegerField(default=0)
     dislikes = models.PositiveIntegerField(default=0)
-    # objects = ArticleManager()
+    # objects = models.Manager()
     # comments = GenericRelation('comments')
 
     def get_absolute_url(self):
-        return reverse('article-detail', kwargs={'slug':self.slug})
+        return reverse('article-detail', kwargs={'category': self.category.slug, 'slug':self.slug})
 
     def __str__(self):
         return "Статья '{}' из категории '{}'".format(self.title, self.category.name) 
