@@ -1,0 +1,53 @@
+/*!
+ * Start Bootstrap - 4 Col Portfolio (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+body {
+    padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+.portfolio-item {
+    margin-bottom: 25px;
+}
+a.dropdown-item {
+    font-size: 15px;
+    color: #555;
+    display: block;
+    padding: 3px 0 3px 10px;
+}
+a.dropdown-item:hover{
+    text-decoration: none;
+    background-color: #dadada;
+    transition: 0.5s all ease
+}
+a.dropdown-item:hover {
+    text-decoration: none;
+}
+.nav .dropdown-toggle {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.nav-link.dropdown-toggle::after {
+    display: inline-block;
+    width: 0;            
+    height: 0;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: "";
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    border-left: .3em solid transparent;
+}
+
+
+
+.block_article{
+    margin-bottom: 15px;
+}
+footer {
+    margin: 50px 0;
+}
